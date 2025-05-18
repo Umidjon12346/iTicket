@@ -19,16 +19,16 @@ export class CustomerCardsController {
 
   @Get(':id')
   findOne(@Param('id') id: string) {
-    return this.customerCardsService.findOne(+id);
+    return this.customerCardsService.findOne(id);
   }
 
   @Patch(':id')
   update(@Param('id') id: string, @Body() updateCustomerCardDto: UpdateCustomerCardDto) {
-    return this.customerCardsService.update(+id, updateCustomerCardDto);
+    return this.customerCardsService.update(id, updateCustomerCardDto);
   }
 
   @Delete(':id')
   remove(@Param('id') id: string) {
-    return this.customerCardsService.remove(+id);
+    return this.customerCardsService.remove(id);
   }
 }

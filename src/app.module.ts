@@ -8,6 +8,10 @@ import { DistrictModule } from './district/district.module';
 import { CustomerModule } from './customer/customer.module';
 import { CustomerCardsModule } from './customer_cards/customer_cards.module';
 import { CustomerAddressModule } from './customer_address/customer_address.module';
+import { VenueModule } from './venue/venue.module';
+import { VenuePhotoModule } from './venue_photo/venue_photo.module';
+import { VenueTypeModule } from './venue_type/venue_type.module';
+import { TypeModule } from './type/type.module';
 
 @Module({
   imports: [
@@ -20,6 +24,10 @@ import { CustomerAddressModule } from './customer_address/customer_address.modul
     CustomerModule,
     CustomerCardsModule,
     CustomerAddressModule,
+    VenueModule,
+    VenuePhotoModule,
+    VenueTypeModule,
+    TypeModule,
   ],
   controllers: [],
   providers: [],

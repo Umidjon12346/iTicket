@@ -5,6 +5,7 @@ export type CustomerCardDocument = CustomerCard & Document;
 
 @Schema()
 export class CustomerCard {
+  
   @Prop({ type: Types.ObjectId, ref: "Customer" })
   customer_id: Types.ObjectId;
 

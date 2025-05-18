@@ -8,7 +8,7 @@ export class District {
   name: string;
 
   @Prop({ type: Types.ObjectId, ref: "Region" }) // Bog‘lanish: District → Region
-  regionId: Types.ObjectId;
+  region_id: Types.ObjectId;
 }
 
 export const DistrictSchema = SchemaFactory.createForClass(District);
